@@ -1,6 +1,6 @@
 /**
  * @author Nicholas Sun
- * @version 1.0.0
+ * @version 1.0.1
  * @date 2025-11-21
  * @fileoverview This program converts a cents amount into dollars and cents.
  */
@@ -15,7 +15,7 @@ import (
 	"strings"
 )
 
-func main(){
+func main() {
 	// Declaring variables
 	var centsAsString string
 	var cents int
@@ -28,9 +28,9 @@ func main(){
 	cents, _ = strconv.Atoi(centsAsString)
 
 	// Calculation
-	var remainder int = cents % 100;
-	var dollars int = (cents - remainder) / 100;
+	var remainder int = cents % 100
+	var dollars int = (cents - remainder) / 100
 
 	// Printing
-	fmt.Printf("That is %d dollars and %d cents.\n", dollars, remainder);
+	fmt.Printf("That is %d dollars and %d cents.\n", dollars, remainder)
 }
